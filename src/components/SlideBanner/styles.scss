@@ -1,0 +1,93 @@
+.slick-list {
+	overflow: hidden;
+}
+.slick-track {
+	display: flex;
+}
+.slick-slider {
+	position: relative;
+}
+.banner {
+	outline: none;
+	position: relative;
+
+	.desktop {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	.mobile {
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+
+	&__text {
+		font-family: "Nunito", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 41px;
+		color: #ffffff;
+		position: absolute;
+		left: 10%;
+		max-width: 450px;
+		display: block;
+		top: 30%;
+
+		@media (max-width: 768px) {
+			font-size: 20px;
+			line-height: 100%;
+		}
+
+		strong {
+			font-size: 45px;
+
+			@media (max-width: 768px) {
+				font-size: 30px;
+				line-height: 100%;
+			}
+		}
+	}
+}
+.slick-dots {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex !important;
+	justify-content: center;
+	position: absolute;
+	bottom: 37px;
+	width: 100%;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		bottom: 13px;
+	}
+
+	li {
+		margin: 6.5px;
+	}
+
+	button {
+		outline: none;
+		border: none;
+		font-size: 0;
+		width: 10px;
+		height: 11px;
+		border-radius: 50%;
+		background: #bdbdbd;
+	}
+}
+.slick-active {
+	button {
+		background: #f8475f;
+	}
+}

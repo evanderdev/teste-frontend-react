@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+$bg-color: white;
+$primary-color: #7a7a7a;
+$color-red: #f8475f;
+
+.header {
+	&__row {
+		width: 100%;
+		background: $bg-color;
+		color: $primary-color;
+		font-family: "Nunito", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 18px;
+		position: relative;
+	}
+
+	&__container {
+		margin: 0 auto;
+		max-width: 1280px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 16px 0 23px;
+		position: relative;
+		@media (max-width: 1280px) {
+			padding: 7px 0 15px;
+		}
+	}
+
+	&__menu-mobile {
+		@media (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	&__logo {
+		max-width: 170px;
+
+		@media (max-width: 425px) {
+			max-width: 100px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__search-box {
+		width: 100%;
+		max-width: 718px;
+		position: relative;
+		background: $bg-color;
+
+		@media (max-width: 1280px) {
+			max-width: 518px;
+		}
+
+		@media (max-width: 992px) {
+			z-index: 99;
+			position: absolute;
+			max-width: 100%;
+			top: 100%;
+			padding: 0 20px 11px;
+		}
+
+		.search-box {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid $primary-color;
+			outline: none;
+			&::-webkit-input-placeholder {
+				font-family: "Nunito", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 18px;
+				color: $primary-color;
+			}
+		}
+
+		.search-btn {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			position: absolute;
+			right: 0;
+			top: -4px;
+
+			@media (max-width: 992px) {
+				right: 20px;
+			}
+		}
+	}
+	&__actions {
+		display: flex;
+		align-items: center;
+
+		.user-action {
+			display: flex;
+			align-items: center;
+			margin-right: 21px;
+		}
+
+		.account {
+			font-family: "Nunito", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 18px;
+			color: $primary-color;
+			margin-left: 6px;
+
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+
+	&__mini-cart {
+		display: flex;
+		align-items: center;
+		.cart {
+			display: flex;
+			align-items: center;
+		}
+		.cart-count {
+			background: $color-red;
+			font-family: "Nunito", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 10px;
+			line-height: 14px;
+			color: $bg-color;
+			padding: 0px 4px;
+			border-radius: 50%;
+			width: 14px;
+			height: 14px;
+			display: block;
+			margin-left: 5px;
+		}
+	}
+}
