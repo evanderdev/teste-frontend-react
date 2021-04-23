@@ -1,0 +1,100 @@
+.product {
+  &__card {
+    max-width: 216px;
+    margin: 0 auto;
+    text-align: center;
+
+    &:hover {
+      .product__description {
+        background: #e6e8ea;
+      }
+      .buy-btn {
+        transform: scale(1);
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__flags {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../../assets/imgs/Polygon.png);
+    height: 72px;
+    width: 80px;
+
+    .flags {
+      display: block;
+      position: absolute;
+      right: 7px;
+      top: 13px;
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+  &__img {
+    position: relative;
+
+    img {
+      display: block;
+    }
+  }
+  &__description {
+    padding: 7px 0 14px;
+  }
+
+  &__info {
+  }
+  &__review {
+    width: max-content;
+    margin: 0 auto;
+  }
+  &__name {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #7a7a7a;
+  }
+  &__price-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 53px;
+
+    .price-from {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #7a7a7a;
+    }
+
+    .price-to {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+    }
+    .price-parceled {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 15px;
+      text-align: center;
+      color: #7a7a7a;
+    }
+  }
+}

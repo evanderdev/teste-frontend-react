@@ -1,0 +1,118 @@
+.footer {
+  &__content {
+    background: #000000;
+    width: 100%;
+    padding: 25px 20px 28px;
+  }
+  &__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__location {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 12px;
+      color: #ffffff;
+      display: block;
+      line-height: 20px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      margin-top: 27px;
+      margin-bottom: 24px;
+    }
+
+    a {
+      padding: 0 17px;
+      background: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 195px;
+      border-radius: 5px;
+      height: 38px;
+      text-decoration: none;
+
+      &:first-child {
+        margin-bottom: 25px;
+      }
+    }
+
+    img {
+      margin-right: 18px;
+    }
+
+    span {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: #000000;
+      display: block;
+      max-width: 120px;
+    }
+  }
+
+  &__responsible {
+    display: flex;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      &:first-child {
+        margin-right: 36px;
+      }
+      span {
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10.6017px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.location {
+  &__title {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      width: 45px;
+      height: 4px;
+      background: #ffffff;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}

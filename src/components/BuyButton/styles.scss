@@ -1,0 +1,20 @@
+.buy-btn {
+  background: #000000 !important;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 7px 27px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 8px auto 0;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  border: none;
+}
