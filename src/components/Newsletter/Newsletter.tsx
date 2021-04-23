@@ -4,10 +4,12 @@ import axios from "axios";
 import "./styles.scss";
 
 const Newsletter: React.FC = () => {
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+$/;
+  function validateAll(email, name) {
+    const reEmail = /^[^\s@]+@[^\s@]+$/;
+    const reName = /^\S+$/;
 
-    if (!re.test(email)) return false;
+    if (!reEmail.test(email)) return false;
+    if (!reName.test(name)) return false;
 
     return true;
   }
@@ -18,7 +20,7 @@ const Newsletter: React.FC = () => {
     const name = (document.getElementById("name") as HTMLInputElement).value;
     const email = (document.getElementById("email") as HTMLInputElement).value;
 
-    if (validateEmail(email))
+    if (validateAll(email, name))
       axios
         .post("https://corebiz-test.herokuapp.com/api/v1/newsletter", {
           name: name,
