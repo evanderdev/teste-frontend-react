@@ -1,3 +1,27 @@
-# Projeto React do Zero com TypeScript, Babel e Sass
+# Projeto Template Corebiz
 
-Projeto resultante do artigo: **[Configuração de um projeto React com Typescript, Babel e Sass do zero](https://medium.com/@eduardo_65821/configura%C3%A7%C3%A3o-de-um-projeto-react-com-typescript-babel-e-sass-do-zero-254f2ee6a4aa?sk=5177763075a2fb740402a26f1c8c7193)**
+# Descrição
+
+O projeto consiste em criar uma pagina simulando algumas funcionalidade de um e-commerce.
+
+O projeto foi realizado com React e configurado para rodar o Sass. A sua organização se da pelas seguintes pastas:
+
+public: Onde fica o index.html que recebe os bundles.
+
+src: Pasta raiz do projeto
+
+assets: Onde ficam as imagens usadas.
+
+Components: Onde ficam dividos os componentes para melhor manutenção e organização do projeto.
+
+contexts: Onde ficam os contextos usados para criar a prateleira e criar a quantidade no carrinho.
+
+pages: Onde ficam dividas as paginas.
+
+## Instruções
+
+Faça o clone do projeto.
+
+Ao abrir o projeto, rode o comando 'yarn' no terminal para instalar todas as dependências.
+
+Para iniciar o projeto, basta dar o comando 'yarn start' no terminal e o servidor será startado.
